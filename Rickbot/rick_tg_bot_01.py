@@ -8,7 +8,7 @@ def info_get():
     data = requests.get(f'https://rickandmortyapi.com/api/character?page={page}')
     char_rick = data.json()
     i = int(random.randrange(0, 20))
-    data1=(f"имя {page,i, char_rick['results'][i]['name']}\nвид {char_rick['results'][i]['species']}\nстатус {char_rick['results'][i]['status']}\nфото {char_rick['results'][i]['image']}")
+    data1=(f"стр {page}, номер {i}\n имя {char_rick['results'][i]['name']}\nвид {char_rick['results'][i]['species']}\nстатус {char_rick['results'][i]['status']}\nфото {char_rick['results'][i]['image']}")
     return data1
 
 
