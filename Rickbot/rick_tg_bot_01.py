@@ -1,3 +1,4 @@
+#Rand_actors_bot название бота в телеграмме
 import random
 from aiogram import Bot, Dispatcher, executor, types
 import requests
